@@ -59,3 +59,8 @@
     background-image: url("img/capa.jpg");
     background-size: cover;
 }
+@media (max-width: 600px){
+    .nav{
+        flex-direction: column;
+    }
+}

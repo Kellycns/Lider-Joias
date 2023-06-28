@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    color: #241224;
+    text-decoration: none;
+    list-style: none;
+}
+.bgcolor1 {
+    background-color: #241224;
+    color: #000000;
+}
+.bgcolor2 {
+    background-color: #dcd2d1;
+}
+.bgcolor3 {
+    background-color: #eba215;
+}
+.color1 {
+    color: #241224;
+}
+.color2 {
+    color: #dcd2d1;
+}
+.color3 {
+    color: #eba215;
+}
+.titulo {
+    font-family: 'Dancing Script', cursive;
+}
+.nav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 5%;
+}
+.nav-loja img{
+    width: 70px;
+}
+.nav-div {}
+.nav-opcoes {
+    display: flex;
+    justify-content: space-between;
+}
+.opcoes {
+    padding: 2px 10px;
+}
+.nav-opcoes li {
+    
+}
+.nav-opcoes li:hover {
+    font-weight: bold;
+}
+.inicio {
+    height: 100vh;
+    background-image: url("img/capa.jpg");
+    background-size: cover;
+}

@@ -28,7 +28,7 @@
 }
 .titulo {
     font-family: 'Dancing Script', cursive;
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-size: clamp(2rem, 4vw, 3.5rem);
     text-align: center;
 }
 .nav {
@@ -84,7 +84,8 @@
 .contato {
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center; 
+    font-size: clamp(1.0rem, 2vw, 1.2rem); 
 }
 .contato-titulo {
     padding: 5px 0 30px 0;
@@ -96,10 +97,15 @@
     gap: 5vw;
 }
 .mapa{
-    max-width: fit-content;
+    width: 25vw;
+    height: 40vh;
 }
 .contato-negrito {
     font-weight: bold;
+}
+.contato-esquerda-topo {
+    display: flex;
+    gap: 5vw;
 }
 .horarios {}
 .horarios-titulo {
@@ -107,13 +113,24 @@
 }
 .horarios-lista{}
 .endereco-numero {
-    max-width: 300px;
+    max-width: 200px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 .endereco-numero p {
     padding: 2px 0;
+}
+@media (max-width: 800px){
+    .opcoes-contato {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20px 20px 70px;
+    }
+    .mapa {
+        width: 70vw;
+        height: 60vh;
+    }
 }
 @media (max-width: 600px){
     .nav{
@@ -123,5 +140,19 @@
         flex-direction: column-reverse;
         align-items: center;
         padding: 20px 20px 70px;
+    }
+    .mapa {
+        width: 90vw;
+        height: 60vh;
+    }
+}
+@media (max-width: 460px) {
+    .contato-esquerda-topo {
+        flex-direction: column-reverse;
+        
+    }
+    .mapa {
+        width: 80vw;
+        height: 60vh;
     }
 }

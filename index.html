@@ -46,7 +46,11 @@
       </nav>
     </header>
     <main class="">
-      <section class="inicio" style="background-image: url(img/capa.blur.jpg)">
+      <section
+        class="inicio"
+        id="inicio"
+        style="background-image: url(img/capa.blur.jpg)"
+      >
         <div class="">
           <p class="titulo inicio-titulo">Líder Joias</p>
           <p class="subtitulo titulo">Relojoaria, ourivesaria e variedades</p>
@@ -147,30 +151,41 @@
               </li>
               <li>
                 <p class="contato-negrito">Siga nosso perfil</p>
-                <p>@liderjoias.cda</p>
+                <a
+                  href="https://www.instagram.com/liderjoias.cda/"
+                  target="_blank"
+                >
+                  <p>@liderjoias.cda</p>
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </section>
     </main>
-    <footer class="bgcolor1">
-      <ul>
+    <footer class="bgcolor1 rodape">
+      <ul class="rodape-opcoes">
         <li class="logo-footer">
-          <a href="#">
-            <img src="/" />
+          <a href="#inicio">
+            <img src="img/Lider_Joias-branco.png" />
           </a>
         </li>
         <li class="nav-footer">
-          <ul>
+          <ul class="nav-footer-itens">
             <li class="">
-              <a class="" href="#">Nossos serviços</a>
+              <a class="" href="#servicos">
+                <p>Nossos serviços</p>
+              </a>
             </li>
             <li class="">
-              <a class="" href="#">Sobre nós</a>
+              <a class="" href="#sobre">
+                <p>Sobre nós</p>
+              </a>
             </li>
             <li class="">
-              <a class="" href="#">Contato</a>
+              <a class="" href="#contato">
+                <p>Contato</p>
+              </a>
             </li>
           </ul>
         </li>
@@ -180,13 +195,21 @@
             Araguaia - PA
           </p>
         </li>
-        <li class="Contato">
-          <ul>
+        <li class="contato">
+          <ul class="nav-footer-itens">
             <li class="">
-              <a class="" href="#">(94) 99163-7994</a>
+              <a class="" href="#">
+                <p>(94) 99163-7994</p>
+              </a>
             </li>
             <li class="">
-              <a class="" href="#">@liderjoias.cda</a>
+              <a
+                class=""
+                href="https://www.instagram.com/liderjoias.cda/"
+                target="_blank"
+              >
+                <p>@liderjoias.cda</p>
+              </a>
             </li>
           </ul>
         </li>

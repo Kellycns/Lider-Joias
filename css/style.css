@@ -36,7 +36,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 8vh;
     padding: 0 5%;
 }
 .nav-loja img{
@@ -46,6 +45,7 @@
 .nav-opcoes {
     display: flex;
     justify-content: space-between;
+    font-size: clamp(0.8rem, 2vw, 1rem)
 }
 .opcoes {
     padding: 2px 10px;
@@ -78,6 +78,14 @@
     background-color: #eba215;
     border: none;
     width: clamp(6rem, 20vw, 10rem);
+}
+
+/** Imagem de transicao **/
+.imagem-transicao {
+    margin: 50px 0;
+}
+.imagem-transicao img{
+    width: 100%;
 }
 
 /** Contato **/
@@ -135,6 +143,7 @@
 @media (max-width: 600px){
     .nav{
         flex-direction: column;
+        padding-bottom: 10px;
     }
     .opcoes-contato {
         flex-direction: column-reverse;

@@ -87,6 +87,34 @@
     background-color: #ffad087c;
 }
 
+/** Servicos **/
+.servicos {
+    background-color: #dcd2d1;
+    padding: 20px;
+    font-size: clamp(1.0rem, 2vw, 1.2rem);
+    text-align: center;
+}
+.servicos-titulo {
+    margin-top: 20px;
+}
+.servicos-opcoes {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 20px;
+}
+.servicos-opcoes li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servico-icones img {
+    width: 10vw;
+}
+.servicos-opcoes li p {
+    max-width: 100px;
+    padding: 10px 0px;
+}
+
 /** Sobre **/
 .sobre {
     display: flex;
@@ -218,6 +246,12 @@
         width: 70vw;
         height: 60vh;
     }
+    .servicos-opcoes{
+        margin-top: 80px;
+    }
+    .servico-icones img {
+        width: 100px;
+    }
 }
 @media (max-width: 700px){
     .sobre {
@@ -257,6 +291,14 @@
     .endereco {
         max-width: 100px;
     }
+    .servicos-opcoes {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+    }
+    .servico-icones img {
+        width: 70px;
+    }
 }
 @media (max-width: 460px) {
     .contato-esquerda-topo {
@@ -266,5 +308,10 @@
     .mapa {
         width: 80vw;
         height: 60vh;
+    }
+}
+@media (max-width: 460px){
+    .servicos-opcoes {
+        grid-template-columns: auto;
     }
 }

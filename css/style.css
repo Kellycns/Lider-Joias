@@ -91,9 +91,14 @@
     justify-content: space-around;
     margin-top: 30px;
     padding-top: 20px;
+    text-align: center;
+    align-items: center;
 }
 .bt-rede-social button{
     border: none;
+}
+.bt-rede-social button:hover {
+    cursor: pointer;
 }
 .bi {
     background-color: #eba215;
@@ -101,6 +106,9 @@
     padding: 3px 8px 8px;
     border-radius: 5px;
     font-size: clamp(1.0rem, 3vw, 1.5rem); 
+}
+.bi:hover {
+    background-color: #e9b03f;
 }
 .loja-descricao{
     font-size: clamp(1.0rem, 2vw, 1.2rem);
@@ -120,6 +128,7 @@
     align-items: center;
 }
 .loja img{
+    max-width: 500px;
     width: 40vw;
     margin: 20px;
 
@@ -212,7 +221,6 @@
     .sobre {
         flex-direction: column;
         align-items: center;
-        text-align: center;
     }
     .pc {
         display: none;
@@ -222,6 +230,7 @@
     }
     .loja img{
         width: 80vw;
+        
     }
 }
 @media (max-width: 600px){

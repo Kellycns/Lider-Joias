@@ -31,6 +31,7 @@
     font-size: clamp(2rem, 4vw, 3.5rem);
     text-align: center;
 }
+/** barra de navegacao **/
 .nav {
     background-color: #ffffff;
     display: flex;
@@ -48,9 +49,6 @@
 }
 .opcoes {
     padding: 2px 10px;
-}
-.nav-opcoes li {
-    
 }
 .nav-opcoes li:hover {
     font-weight: bold;
@@ -83,6 +81,10 @@
     border-radius: 50px;
     font-size: clamp(0.8rem, 2vw, 1.2rem); 
     padding: 4px;
+}
+.bt-contato:hover {
+    cursor: pointer;
+    background-color: #ffad087c;
 }
 
 /** Sobre **/
